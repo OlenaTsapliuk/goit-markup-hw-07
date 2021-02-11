@@ -6,7 +6,9 @@
   list-style: none;
 }
 
-.site-nav__link {
+.logo,
+.logo-secondary,
+.logo-secondary-footer, .site-nav__link, .auth-nav__link {
   margin-top: 0;
   margin-bottom: 0;
   text-decoration: none;
@@ -58,6 +60,7 @@ body {
 
 .logo {
   color: #2094f3;
+  display: inline-block;
 }
 
 .page-header .logo {
@@ -204,5 +207,44 @@ body {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
+}
+
+.button-list__caption {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 0;
+  -webkit-transition: color var(--time) var(--animation-function), background-color var(--time) var(--animation-function), -webkit-box-shadow var(--time) var(--animation-function);
+  transition: color var(--time) var(--animation-function), background-color var(--time) var(--animation-function), -webkit-box-shadow var(--time) var(--animation-function);
+  transition: color var(--time) var(--animation-function), background-color var(--time) var(--animation-function), box-shadow var(--time) var(--animation-function);
+  transition: color var(--time) var(--animation-function), background-color var(--time) var(--animation-function), box-shadow var(--time) var(--animation-function), -webkit-box-shadow var(--time) var(--animation-function);
+}
+
+.button-list__caption:hover, .button-list__caption:focus {
+  color: #ffffff;
+  background-color: #2094f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-item .button-item-icon:not(:last-child) {
+  margin-right: 8px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 .logo,
 .logo-secondary,
 .logo-secondary-footer {
+  @extend %link;
   font-family: $logo-font;
   font-weight: bold;
   font-size: 26px;
@@ -8,6 +9,7 @@
 }
 .logo {
   color: $accent-color;
+  display: inline-block;
 }
 .page-header .logo {
   display: inline-block;

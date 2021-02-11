@@ -65,6 +65,7 @@
 /* Иконки Tel, mail */
 
 .auth-nav__link {
+  @extend %link;
   fill: currentColor;
 }
 .auth-nav__icon {
