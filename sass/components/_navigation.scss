@@ -16,65 +16,80 @@
 //   transition-timing-function: var(--animation-function);
 // }
 
-.site-nav__link {
-  color: var(--title-text-color);
-}
-.site-nav__link.current {
-  position: relative;
-  color: var(--accent-color);
+// .site-nav__link {
+//   color: var(--title-text-color);
+// }
+.site-nav {
+  font-weight: 500;
+  line-height: 1.14;
+  color: $title-text-color;
+  letter-spacing: 0.02em;
 }
 
 .site-nav {
-  display: flex;
-  margin-left: 93px;
-}
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-.auth-nav,
-.auth-nav__link {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-text-color);
-}
-.auth-nav__item + .auth-nav__item {
-  margin-left: 50px;
+  @extend %list;
 }
 
-/* Иконки Tel, mail */
-
-.auth-nav__link {
-  fill: currentColor;
-}
-.auth-nav__icon {
-  margin-right: 10px;
-}
-/* Подчеркивание текущей ссылки */
-.site-nav__link.current::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  animation-name: scale;
-  animation-duration: 250ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  transform-origin: center left;
+.site-nav__link {
+  color: $title-text-color;
 }
 
-@keyframes scale {
-  0% {
-    transform: scaleX(0);
-  }
+// .site-nav__link.current {
+//   position: relative;
+//   color: var(--accent-color);
+// }
 
-  100% {
-    transform: scaleX(1);
-  }
-}
+// .site-nav {
+//   display: flex;
+//   margin-left: 93px;
+// }
+// .site-nav__item:not(:last-child) {
+//   margin-right: 50px;
+// }
+// .auth-nav,
+// .auth-nav__link {
+//   display: flex;
+//   margin-left: auto;
+//   align-items: center;
+//   justify-content: center;
+//   color: var(--primary-text-color);
+// }
+// .auth-nav__item + .auth-nav__item {
+//   margin-left: 50px;
+// }
+
+// /* Иконки Tel, mail */
+
+// .auth-nav__link {
+//   fill: currentColor;
+// }
+// .auth-nav__icon {
+//   margin-right: 10px;
+// }
+// /* Подчеркивание текущей ссылки */
+// .site-nav__link.current::after {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   display: block;
+//   content: "";
+//   width: 100%;
+//   height: 4px;
+//   background-color: var(--accent-color);
+//   border-radius: 2px;
+//   animation-name: scale;
+//   animation-duration: 250ms;
+//   animation-timing-function: linear;
+//   animation-fill-mode: forwards;
+//   transform-origin: center left;
+// }
+
+// @keyframes scale {
+//   0% {
+//     transform: scaleX(0);
+//   }
+
+//   100% {
+//     transform: scaleX(1);
+//   }
+// }
