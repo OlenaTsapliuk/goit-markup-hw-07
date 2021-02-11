@@ -4,16 +4,16 @@
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  font-family: Roboto, sans-serif;
+  color: $title-text-color;
+  font-family: $body-font;
   cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
 
-  transition: color var(--time) var(--animation-function),
-    background-color var(--time) var(--animation-function),
-    box-shadow var(--time) var(--animation-function);
+  transition: color $time $animation-function,
+    background-color $time $animation-function,
+    box-shadow $time $animation-function;
 
   &:hover,
   &:focus {
@@ -23,11 +23,11 @@
   }
 }
 
-.button-list__item {
-  display: flex;
-  justify-content: center;
+.button-list {
+  @extend %list;
+  @include centered-flex();
   margin-bottom: 50px;
 }
-.button-item .button-item-icon:not(:last-child) {
+.button-list__item:not(:last-child) {
   margin-right: 8px;
 }
