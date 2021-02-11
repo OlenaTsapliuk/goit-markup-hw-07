@@ -1,0 +1,22 @@
+.logo,
+.logo-secondary,
+.logo-secondary-footer {
+  font-family: $logo-font;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo {
+  color: $accent-color;
+}
+.page-header .logo {
+  display: inline-block;
+}
+
+.logo-secondary {
+  color: $title-text-color;
+}
+/* Логотип вторая часть в футере */
+.logo-secondary-footer {
+  color: $primary-white-color;
+}
