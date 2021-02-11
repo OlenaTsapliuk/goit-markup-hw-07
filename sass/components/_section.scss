@@ -1,0 +1,18 @@
+.section,
+.workers {
+  background-color: $primary-white-color;
+  padding-bottom: $padding-bottom-section;
+}
+.section-top {
+  padding-top: $padding-top-section;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: $title-text-color;
+  margin-top: 0%;
+  margin-bottom: 50px;
+}
