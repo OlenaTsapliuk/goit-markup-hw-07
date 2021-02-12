@@ -1,5 +1,4 @@
-.section,
-.section-workers {
+.section {
   background-color: $primary-white-color;
   padding-bottom: $padding-bottom-section;
 }
@@ -7,7 +6,7 @@
   padding-top: $padding-top-section;
 }
 
-.section-title {
+.section__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -17,6 +16,7 @@
   margin-bottom: 50px;
 }
 .section-workers {
+  @extend .section;
   background-color: $background-komandy;
   padding-top: $padding-top-section;
 }
