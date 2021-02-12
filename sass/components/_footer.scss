@@ -17,6 +17,11 @@
   transition-property: color;
   transition-duration: $time;
   transition-timing-function: $animation-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .auth-footer {
   @extend %list;
