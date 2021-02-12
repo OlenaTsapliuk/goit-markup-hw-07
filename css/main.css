@@ -1,12 +1,12 @@
 @charset "UTF-8";
 .site-nav,
-.auth-nav, .features, .posters, .workers, .social-list, .klient-list, .button-list {
+.auth-nav, .features, .posters, .workers, .social-list, .klient-list, .auth-footer, .button-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.logo, .logo-secondary, .logo-secondary-footer, .footer-logo, .site-nav__link, .auth-nav__link, .social-list__links, .klient-list__links {
+.logo, .logo-secondary, .logo-secondary-footer, .footer-logo, .site-nav__link, .auth-nav__link, .social-list__links, .klient-list__links, .auth-footer__link {
   margin-top: 0;
   margin-bottom: 0;
   text-decoration: none;
@@ -568,6 +568,77 @@ body {
 .klient-list__links:hover, .klient-list__links:focus {
   fill: #2094f3;
   border-color: #2094f3;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  display: inline-block;
+  color: #2094f3;
+  margin-bottom: 20px;
+}
+
+.auth-footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-footer {
+  display: inline-block;
+}
+
+.auth-footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address {
+  margin-bottom: 9px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-social-list__caption {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social-list {
+  margin-left: 69px;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.bg {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
 }
 
 .button-list__caption {
