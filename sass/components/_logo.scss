@@ -1,24 +1,28 @@
-.logo,
-.logo-secondary,
-.logo-secondary-footer {
+%whole-logo {
   @extend %link;
   font-family: $logo-font;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
 }
+
 .logo {
+  @extend %whole-logo;
   color: $accent-color;
-  display: inline-block;
-}
-.page-header .logo {
   display: inline-block;
 }
 
 .logo-secondary {
+  @extend %whole-logo;
   color: $title-text-color;
 }
-/* Логотип вторая часть в футере */
+// .logo-secondary-footer
 .logo-secondary-footer {
+  @extend %whole-logo;
   color: $primary-white-color;
+}
+.footer-logo {
+  @extend %whole-logo;
+  display: inline-block;
+  margin-bottom: 20px;
 }

@@ -1,5 +1,5 @@
 .section,
-.workers {
+.section-workers {
   background-color: $primary-white-color;
   padding-bottom: $padding-bottom-section;
 }
@@ -15,4 +15,8 @@
   color: $title-text-color;
   margin-top: 0%;
   margin-bottom: 50px;
+}
+.section-workers {
+  background-color: $background-komandy;
+  padding-top: $padding-top-section;
 }
