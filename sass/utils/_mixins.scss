@@ -3,3 +3,8 @@
   align-items: center;
   justify-content: center;
 }
+@mixin position-element($type, $top: 0, $left: 0) {
+  position: $type;
+  top: $top;
+  left: $left;
+}

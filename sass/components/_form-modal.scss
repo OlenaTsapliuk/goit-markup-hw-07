@@ -1,0 +1,146 @@
+.form-modal {
+  padding: 40px;
+}
+.modal-button {
+  padding: 10px 55.5px;
+}
+.modal-caption {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  display: block;
+  margin-bottom: 30px;
+}
+.form-modal .form-group {
+  position: relative;
+}
+.form-input,
+.coment-field {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-group {
+  margin-bottom: 28px;
+}
+.form-input {
+  position: relative;
+  padding-left: 42px;
+  transition: border $time $animation-function;
+}
+
+.form-input:focus,
+.coment-field:focus {
+  outline: none;
+  border: 1px solid $accent-color;
+}
+.form-icon {
+  @include position-element(absolute, 50%, 14.5px);
+
+  transform: translateY(-50%);
+  transition: fill $time $animation-function;
+}
+.form-input:focus ~ .form-icon {
+  fill: $accent-color;
+}
+.form-label,
+.coment-label {
+  @include position-element(absolute);
+  transform: translateY(-18px);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+}
+
+.form-coment {
+  position: relative;
+  margin-bottom: 20px;
+}
+.coment-field {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  transition: border $time $animation-function;
+}
+.coment-field::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: $placeholder-form-modal-color;
+}
+.form-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.input-checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.label-checkbox {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-left: 35px;
+}
+.label-checkbox::after {
+  @include position-element(absolute, 50%, 13px);
+  transform: translateY(-50%);
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  transition: all $time $animation-function;
+}
+
+.input-checkbox:checked + .label-checkbox::after {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url(../images/icon-check3.svg);
+  background-size: contain;
+  background-position: center;
+  background-origin: border-box;
+}
+
+.input-checkbox:checked:focus + .label-checkbox::after {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.input-checkbox:focus:not(:checked) + .label-checkbox::after {
+  border-color: $accent-color;
+}
+.link-consent {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: normal;
+  color: $accent-color;
+}
+.modal-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow $time $animation-function;
+}
+.modal-button:hover,
+.modal-button:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
