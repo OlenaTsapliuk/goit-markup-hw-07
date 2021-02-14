@@ -15,6 +15,10 @@
   margin-top: 0%;
   margin-bottom: 50px;
 }
+.section-title-hidden {
+  // @extend .section__title;
+  @extend %visually-hidden;
+}
 .section-workers {
   @extend .section;
   background-color: $background-komandy;
