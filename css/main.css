@@ -23,7 +23,7 @@
   overflow: hidden;
 }
 
-.modal-button {
+.modal-button, .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,11 +286,6 @@ body {
 
 .buttons {
   padding: 10px 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .buttons:hover, .buttons:focus {
@@ -372,7 +367,6 @@ body {
 
 .features__caption {
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
   color: #212121;

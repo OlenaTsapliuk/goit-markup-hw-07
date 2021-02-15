@@ -2,7 +2,7 @@
   @extend %link;
   font-family: $logo-font;
   font-weight: bold;
-  font-size: 26px;
+  font-size: $font-size-logo;
   line-height: 1.2;
 }
 
