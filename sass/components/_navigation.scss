@@ -2,15 +2,18 @@
 .main-nav {
   @include centered-flex();
 }
-.site-nav,
-.auth-nav {
+.site-nav {
+  @extend %list;
   font-weight: 500;
   line-height: 1.14;
   color: $title-text-color;
   letter-spacing: 0.02em;
 }
-.site-nav__link,
-.auth-nav__link {
+.auth-nav {
+  @extend .site-nav;
+}
+
+.site-nav__link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -19,17 +22,8 @@
   transition-duration: $time;
   transition-timing-function: $animation-function;
 }
-
-.site-nav {
-  font-weight: 500;
-  line-height: 1.14;
-  color: $title-text-color;
-  letter-spacing: 0.02em;
-}
-
-.site-nav,
-.auth-nav {
-  @extend %list;
+.auth-nav__link {
+  @extend .site-nav__link;
 }
 
 .site-nav__link {

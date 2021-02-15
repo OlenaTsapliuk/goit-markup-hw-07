@@ -1,10 +1,9 @@
 .footer {
   background-color: $footer-heroy-background-color;
-}
-.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-logo {
   @extend %whole-logo;
   display: inline-block;
