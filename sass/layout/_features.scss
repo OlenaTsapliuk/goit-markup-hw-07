@@ -5,10 +5,12 @@
 }
 .features__item {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.features__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .features__caption {
   font-weight: bold;
   line-height: 1.1;

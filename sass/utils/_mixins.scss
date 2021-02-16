@@ -10,5 +10,5 @@
 }
 @mixin section-padding($padding-top: 94px, $padding-bottom: 94px) {
   padding-top: $padding-top;
-  padding-bottom: 94px;
+  padding-bottom: $padding-bottom;
 }

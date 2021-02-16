@@ -9,9 +9,6 @@
   color: $title-text-color;
   letter-spacing: 0.02em;
 }
-.auth-nav {
-  @extend .site-nav;
-}
 
 .site-nav__link {
   display: inline-block;
@@ -21,9 +18,6 @@
   transition-property: color;
   transition-duration: $time;
   transition-timing-function: $animation-function;
-}
-.auth-nav__link {
-  @extend .site-nav__link;
 }
 
 .site-nav__link {
@@ -46,30 +40,7 @@
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.auth-nav,
-.auth-nav__link {
-  @include centered-flex();
-  color: $primary-text-color;
-  margin-left: auto;
-}
-.auth-nav__item + .auth-nav__item {
-  margin-left: 50px;
-}
 
-/* Иконки Tel, mail */
-
-.auth-nav__link {
-  @extend %link;
-  fill: currentColor;
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-
-.auth-nav__icon {
-  margin-right: 10px;
-}
 /* Подчеркивание текущей ссылки */
 .site-nav__link.current::after {
   position: absolute;
