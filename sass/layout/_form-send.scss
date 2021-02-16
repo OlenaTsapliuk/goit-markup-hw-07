@@ -10,7 +10,7 @@
   margin-right: 11px;
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+  border-radius: $border-radius;
   background-color: transparent;
   color: $primary-white-color;
   font-weight: normal;
@@ -21,12 +21,11 @@
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-}
-
-.form-send__input::placeholder {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: $placeholder-form-send-color;
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: $placeholder-form-send-color;
+  }
 }

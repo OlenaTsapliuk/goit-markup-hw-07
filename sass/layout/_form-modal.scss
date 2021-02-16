@@ -14,22 +14,20 @@
 }
 .form-modal__group {
   position: relative;
+  margin-bottom: 28px;
 }
 .form-modal__input,
 .form-coment__field {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  border-radius: $border-radius;
 }
-.form-modal__group {
-  margin-bottom: 28px;
-}
+
 .form-modal__input {
   position: relative;
   padding-left: 42px;
   transition: border $time $animation-function;
-  &:focus,
   &:focus {
     outline: none;
     border: 1px solid $accent-color;
@@ -45,7 +43,7 @@
 .form-modal__input:focus ~ .form-modal__icon {
   fill: $accent-color;
 }
-.form-modal__label,
+
 .form-coment__label {
   @include position-element(absolute);
   transform: translateY(-18px);
@@ -54,7 +52,9 @@
   line-height: 1.167;
   letter-spacing: 0.01em;
 }
-
+.form-modal__label {
+  @extend .form-coment__label;
+}
 .form-coment {
   position: relative;
   margin-bottom: 20px;
@@ -68,14 +68,15 @@
     outline: none;
     border: 1px solid $accent-color;
   }
+  &::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: $placeholder-form-modal-color;
+  }
 }
-.form-coment__field::placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: $placeholder-form-modal-color;
-}
+
 .form-checkbox {
   position: relative;
   display: flex;
@@ -100,17 +101,18 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-left: 35px;
-}
-.form-checkbox__label::after {
-  @include position-element(absolute, 50%, 13px);
-  transform: translateY(-50%);
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid $title-text-color;
-  border-radius: 2px;
-  transition: all $time $animation-function;
+
+  &::after {
+    @include position-element(absolute, 50%, 13px);
+    transform: translateY(-50%);
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    transition: all $time $animation-function;
+  }
 }
 
 .form-checkbox__input:checked + .form-checkbox__label::after {

@@ -4,10 +4,11 @@
 }
 .posters__item {
   width: 370px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.posters__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 /* Спозиционирован текст */
 .posters__block {
   position: relative;

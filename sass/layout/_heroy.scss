@@ -2,7 +2,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: $footer-heroy-background-color;
-  max-width: 1600px;
+  max-width: $max-width;
   height: 600px;
   margin-right: auto;
   margin-left: auto;
@@ -15,20 +15,8 @@
   background-size: cover;
   background-position: center;
 }
-.heroy__caption {
+.heroy__wraper {
   max-width: 700px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.heroy__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $primary-white-color;
-  margin-top: 0%;
-  margin-bottom: 30px;
 }
